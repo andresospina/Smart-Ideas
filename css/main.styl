@@ -1,0 +1,641 @@
+// COLORES
+azul = #242C36
+blanco = #FFF
+rojo = #FA4171
+verde = #31B0B6
+gris = #373737
+grisesito = #FBFBFB
+negro = #242C36
+azulOscuro = #252C34
+ 
+*
+	webkit-transition: ease-out .3s;
+	-moz-transition: ease-out .3s;
+	-o-transition: ease-out .3s;
+	transition: ease-out .3s;
+
+t
+
+body
+	font-color gris
+	font-size 14px	
+	font-family Lato, sans-serif
+	height 100%
+	margin 0
+
+h1
+	margin .5em 0 0 6.5em
+	padding 0
+	
+h2
+	color gris
+	font-size 2.8em
+	font-weight 400
+	
+h3
+	color negro
+	text-transform uppercase
+	font-size 2.5em
+h4
+	font-size 1.25em
+	margin-bottom 2.6em
+h6
+	display none
+footer
+	padding 1.5em 0
+	small
+		color gris
+		font-size 14px		
+	a
+		color rojo
+		font-weight 700
+		text-decoration none
+	article
+		display inline-block
+		position relative
+		top -15px
+		width 84%
+	aside
+		display inline-block
+		width 8%
+		margin-right 3%
+		
+header
+	padding 1em 0
+	a
+		color gris
+		font-family Lato, sans-serif
+		font-size 16px
+		font-weight bold
+		text-transform uppercase
+		margin-right 2.06em
+		&:last-child
+			color rojo
+			margin-right 0
+		&:hover
+			border-bottom 2px solid			
+	h1
+		float left
+		
+	nav
+		float right
+		margin-top 2.5em
+		transition: ease-out .05s;	
+		ul 
+			li
+				display inline-block
+#clientes
+	padding 1.5em 0 4em
+	h3
+		font-size 2.1em
+		text-align center
+	ul
+		li
+
+			display inline-block
+			margin-right 15%
+			&:last-child
+				margin 0
+				position relative
+				top 10px			
+#formulario
+	background azulOscuro
+	padding 2.5em 0 4.5em 0
+	h5
+		font-weight 300
+		font-size 2.12em
+		margin .5em 0 1em 0
+		color blanco
+		text-align center
+		span
+			font-weight 700
+	form
+		input
+			background #1B2027
+			border 0
+			border-radius 3px
+			box-shadow 1px 1px 4px 0px rgba(255,255,255,0.16), inset 0px 1px 3px 0px rgba(27,12,12,0.43)
+			color blanco
+			margin-right 1%
+			font-size 1.3em
+			padding .7em
+			width 22%
+			&:nth-child(4)
+				background transparent
+				border 3px solid rojo
+				padding .6em
+				color rojo
+				text-align center
+				text-transform uppercase
+				box-shadow none
+				font-weight 700
+				width 21%
+				&:hover
+					background rojo
+					color blanco
+
+#galeria
+	padding .5em 0 3em
+	position relative
+	article
+		display inline-block
+		position absolute
+		top 3.6em
+		h4
+			text-transform uppercase
+	ul
+		list-style-image: url('../img/check.png');
+		margin -20px
+		li
+			margin-top .6em
+	aside
+		background negro url("../img/galeria.jpg") 
+		background-size cover
+		display inline-block
+		height 260px
+		margin-right 4%
+		position relative
+		width 460px
+		button
+			background transparent
+			border 3px solid verde
+			border-radius 40px
+			color blanco
+			display block
+			font-size 1.1em
+			left 28%
+			padding .6em 2.5em
+			position absolute
+			text-transform uppercase
+			top 45%
+			&:hover
+				background verde
+						
+
+#head
+	background azul
+	font-weight bold
+	height 42px
+	text-transform uppercase
+	a
+		color #AAB2B9
+		text-decoration none
+		&:first-child
+			margin-right .6em
+		&:last-child
+			background blanco
+			border-bottom 0
+			color gris
+			display inline-block
+			margin-left .9em
+			padding 1em 1em .85em 1em
+	nav
+		position absolute		
+		right 0
+		top -14px
+		ul li 
+			display inline-block
+			&last-child
+				background blanco
+
+#hacemos
+	background grisesito
+	padding 1.5em 0
+	article
+		width 45%
+		display inline-block
+		position relative
+		vertical-align top
+		margin 2%	
+		div
+			width 95px
+			height 64px
+			background url("../img/iconos.png")
+			float left
+			margin 2.8em 1.5em 2em 0
+		p
+			margin-top -2.4em
+		#camaras
+			background-position -7px -143px
+		#info
+			background-position -108px -149px
+		#asesoria
+			background-position -9px -222px
+			height 70px
+		#market
+			background-position -108px -215px
+			height 68px
+	h3
+		margin-bottom 1em  				
+#logo2
+	display none
+#presentacion
+	margin 2.4em 0 	
+	position relative
+	img
+		float left
+	article
+		line-height 39px
+		position absolute
+		right 0
+		top 7em
+	span
+		font-weight bold
+	a
+		color blanco
+		font-family Lato, sans-serif
+		text-decoration none
+	.boton
+		background rojo
+		border-radius 40px
+		font-size 1em
+		padding .4em 4em
+		text-transform uppercase
+		float right
+#stream
+	display none		
+#testimonios
+	background url('../img/customers.jpg')
+	background-size cover
+	padding 1.5em 0
+	
+	blockquote
+		color blanco
+		font-size 1.9em
+		font-style italic
+		text-align center
+		span
+			font-style normal
+			font-weight 700
+			position relative
+			top 1em !important
+.contenedor
+	max-width 960px
+	margin 0 auto
+	position relative
+.clear
+	clear both
+@media (max-width: 959px)
+	footer
+		article
+			width 78%
+		aside
+			margin-right 5%
+		
+	h1
+		margin .5em 0 0 4.8em
+	h2
+		font-size 2.4em
+
+	header
+		a
+			margin-right: 1.06em;
+		nav
+			margin-right 1em
+			ul
+				text-align right
+	
+	#clientes
+		ul
+			li
+				margin-right 8%
+	#galeria
+		article
+			position relative
+			top 1em
+			width 100%
+			padding 1em 0
+			h4
+				text-align center
+				margin 2em 0 2em -4em
+			
+		aside
+			height: 220px;
+			width 100%
+			position relative
+			button
+				left 41%
+		ul
+			li
+				font-size 1.4em
+	#formulario
+		form
+			input
+				width 17%
+				margin-right: 4%;
+				&:last-child
+					width 22%
+					font-size 1.2em
+	#hacemos
+		article
+			font-size 16px
+			width 90%
+
+	#silla
+		width 300px
+		img 
+			width 100%
+	#testimonios
+		blockquote
+			font-size 1.6em
+	#presentacion
+		article
+			top 4em
+	.contenedor
+		max-width 800px
+	
+@media (max-width: 864px)
+	h1
+		margin 1em 8%
+	h2
+		font-size 1.4em
+	footer
+		article
+			top -3px
+		aside
+			margin-right 13%
+	header
+		a
+			font-size 12
+			text-decoration none
+		nav
+			margin-top .5em
+			ul
+				li
+					display block
+					line-height 0.5em				
+	#clientes 
+		ul 
+			li
+				display block
+				text-align center
+				margin 1em 0 2em -1.5em
+				width 100%
+				&:last-child
+					margin .5em 0 2em -1.5em
+	#formulario
+		form
+			input
+				width 97%
+				margin 1em 0 0 0
+				&:last-child
+					width 102%
+	#galeria
+		aside 
+			button
+				left 34%
+	#hacemos
+		article
+			div
+				margin-bottom 4em
+	#presentacion
+		article
+			line-height 23px
+		.boton
+			font-size .8em
+	#silla
+		width 220px	
+	.contenedor
+		max-width 500px	
+	
+@media (max-width: 540px)
+	p
+		color gris
+		display none	
+	h1
+		margin 1em 0 0 8%
+	h2
+		color gris
+		font-size 1.65em
+		left 0.4em
+		position absolute
+		text-align left
+		top 1.6em
+		width 85%
+		
+		br
+			display none
+	h3
+		font-size 1.6em
+		text-align center
+	h6
+		display block
+		font-size 2.1em
+		font-weight 300
+		margin 0 0 1.5em
+		text-align center
+	footer
+		article
+			margin 1.5em
+			width 88%
+		aside
+			display block
+			margin 0 auto
+			position relative
+			right 2em
+			text-align center
+	header
+		padding 0
+		ul
+			position absolute
+			right 0
+			top -.5em
+		a
+			font-size: 14px;
+			
+	#formulario
+		form 
+			input
+				left .5em
+				margin .5em 0 0 0
+				position relative
+				width 84%
+				&:nth-child(4)
+					width 91%
+	
+	#clientes
+		display none
+	#testimonios
+		display none
+	#galeria
+		h3
+			display none
+		article
+			
+					
+			h4
+				margin 1em 0 2em 0
+			ul
+				width 85%
+				li
+					font-size: .99em;
+					margin: .9em 0 .9em 1.5em;
+		aside
+			display none	
+	#hacemos 
+		margin-top 22em
+		article
+			font-size 15px
+			margin 0 1.2em 0 1.2em
+			h4
+			.servicios
+				color blanco
+				font-size: 1.25em
+				left -1em
+				margin 0
+				padding .5em 0 .5em 1.2em
+				position relative
+				width 104%
+				
+			.servicio-1
+				background #31B0B6 url('../img/baja.png') no-repeat
+				background-position 85% 14px
+			.servicio-2
+				background #66BABC url('../img/baja.png') no-repeat
+				background-position 85% 14px
+			.servicio-3	
+				background #88C2C1 url('../img/baja.png') no-repeat
+				background-position 85% 14px
+			.servicio-4
+				background #97CCCB url('../img/baja.png') no-repeat
+				background-position 85% 14px
+
+
+			p
+				margin-top: .7em;
+				padding-bottom: 1em;
+				&:last-child
+					padding-bottom 0					
+			
+			#camaras,
+			#info,
+			#asesoria,
+			#market
+				display none
+				
+			
+			#market
+			 	margin-bottom 3em
+		h3
+			margin 3em 0 1.5em 0		
+	#head
+		display none
+	
+	#menu
+		position relative
+		top -14px
+		#menu-icon
+			background azulOscuro
+			clear both
+			display none
+			float left
+			height 87px
+			left 0
+			margin 0
+			paddin
+			top 4px
+			position absolute
+			top 12em
+			width 100%
+			z-index 5
+			
+			nav
+				padding 0
+			ul
+				
+				a
+					color blanco
+					&:last-child
+						color rojo
+				li 
+					line-height: .2em;
+					margin-left 0em
+					position relative
+					right 1.2em
+					text-align right
+					top 2px
+		#mesa
+			background url('../img/mesa.png') no-repeat
+			display block
+			float right
+			height 270px
+			position absolute
+			right 0
+			width 124px
+			background-position 0 -3px
+			
+
+
+		#logo1
+			display none
+		#logo2			
+			display block
+			position absolute
+			top 1em
+			left 2em
+			z-index 2
+			
+		.menu-mobile
+			background transparent
+			color blanco
+			cursor pointer
+			display block
+			font-family Lato
+			font-weight 400
+			margin 1em 14px 0 0
+			padding .2em
+			position relative
+			text-align center
+			top 13.5em
+			left 2.5em
+			width 15%
+			z-index 6
+			div
+				width 30%
+				background rojo
+				height 6px
+				margin 5px 0 7px 0
+				padding 0 20%
+				margin-left 15%
+
+	#presentacion
+		background transparent			
+		margin 0
+		padding 0
+		position relative
+		top .5em
+		article
+			left 1em
+			margin 0
+			position absolute
+			top 10em
+		.boton
+			border-bottom 5px solid #be3055
+			border-radius 10px
+			display block
+			float none
+			font-size 1em
+			margin 0
+			padding 1em 4em
+			position absolute
+			text-align center
+			top 9.8em
+			width 60%
+	
+	#silla
+		display none
+	#stream
+		display block
+		text-align center
+		background azulOscuro
+		padding .5em 0
+		a
+			color blanco
+			text-transform uppercase
+			text-decoration none
+			
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+	
+	header 
+		ul	
+			top .5em
